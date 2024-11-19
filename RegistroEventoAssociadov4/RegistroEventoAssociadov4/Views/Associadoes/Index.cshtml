@@ -1,0 +1,28 @@
+﻿@model IEnumerable<RegistroEventoAssociadov4.Models.Associado>
+
+<h2>Lista de Associados</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nome Titular</th>
+            <th>Celular</th>
+            <th>CPF</th>
+            <th>Tipo de Associação</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var associado in Model)
+        {
+            <tr>
+                <td>@associado.NomeTitular</td>
+                <td>@associado.Celular</td>
+                <td>@associado.CPF</td>
+                <td>@associado.TipoDeAssociacao</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@associado.Id" class="btn btn-primary btn-sm">Detalhes</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

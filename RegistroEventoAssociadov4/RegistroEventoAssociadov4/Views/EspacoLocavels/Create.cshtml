@@ -1,0 +1,53 @@
+﻿@model RegistroEventoAssociadov4.Models.EspacoLocavel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create</h1>
+
+<h4>EspacoLocavel</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="NomeEspaco" class="control-label"></label>
+                <input asp-for="NomeEspaco" class="form-control" />
+                <span asp-validation-for="NomeEspaco" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Tamanho" class="control-label"></label>
+                <input asp-for="Tamanho" class="form-control" />
+                <span asp-validation-for="Tamanho" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CapacidadePessoas" class="control-label"></label>
+                <input asp-for="CapacidadePessoas" class="form-control" />
+                <span asp-validation-for="CapacidadePessoas" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DataConstrucao" class="control-label"></label>
+                <input asp-for="DataConstrucao" class="form-control" />
+                <span asp-validation-for="DataConstrucao" class="text-danger"></span>
+            </div>
+            <div class="form-group form-check">
+                <label class="form-check-label">
+                    <input class="form-check-input" asp-for="Localvel" /> @Html.DisplayNameFor(model => model.Localvel)
+                </label>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

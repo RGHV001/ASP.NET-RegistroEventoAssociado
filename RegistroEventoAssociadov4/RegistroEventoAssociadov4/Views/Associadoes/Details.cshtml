@@ -1,0 +1,78 @@
+﻿@model RegistroEventoAssociadov4.Models.Associado
+
+@{
+    ViewData["Title"] = "Detalhes do Associado";
+}
+
+<h1>Detalhes do Associado</h1>
+
+<div class="card">
+    <div class="card-header bg-primary text-white">
+        Informações Cruciais
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Nome Titular</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.NomeTitular)</dd>
+
+            <dt class="col-sm-3">Celular</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Celular)</dd>
+
+            <dt class="col-sm-3">CPF</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.CPF)</dd>
+
+            <dt class="col-sm-3">Tipo de Associação</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.TipoDeAssociacao)</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="card mt-4">
+    <div class="card-header bg-secondary text-white">
+        Informações Adicionais
+    </div>
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">Endereço</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Endereco)</dd>
+
+            <dt class="col-sm-3">Bairro</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Bairro)</dd>
+
+            <dt class="col-sm-3">CEP</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Cep)</dd>
+
+            <dt class="col-sm-3">Complemento</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Complemento)</dd>
+
+            <dt class="col-sm-3">Cidade</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Cidade)</dd>
+
+            <dt class="col-sm-3">UF</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.UF)</dd>
+
+            <dt class="col-sm-3">Telefone</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Telefone)</dd>
+
+            <dt class="col-sm-3">Email</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Email)</dd>
+
+            <dt class="col-sm-3">Facebook</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Facebook)</dd>
+
+            <dt class="col-sm-3">Instagram</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.Instagram)</dd>
+
+            <dt class="col-sm-3">Registro Geral</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.RegistroGeral)</dd>
+
+            <dt class="col-sm-3">Data de Nascimento</dt>
+            <dd class="col-sm-9">@Html.DisplayFor(model => model.DataNascimento)</dd>
+        </dl>
+    </div>
+</div>
+
+<div class="mt-3">
+    <a asp-action="Edit" asp-route-id="@Model?.Id" class="btn btn-warning">Editar</a>
+    <a asp-action="Index" class="btn btn-secondary">Voltar à Lista</a>
+</div>

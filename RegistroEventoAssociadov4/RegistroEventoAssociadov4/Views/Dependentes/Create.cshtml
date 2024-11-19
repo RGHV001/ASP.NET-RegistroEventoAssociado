@@ -1,0 +1,66 @@
+﻿@model RegistroEventoAssociadov4.Models.Dependente
+
+@{
+    ViewData["Title"] = "Criar Dependente";
+}
+
+<h1>Criar Dependente</h1>
+
+<h4>Dependente</h4>
+<hr />
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" placeholder="Digite o nome do dependente" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="CPF" class="control-label"></label>
+                <input asp-for="CPF" class="form-control" placeholder="Digite o CPF (somente números)" />
+                <span asp-validation-for="CPF" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="RG" class="control-label"></label>
+                <input asp-for="RG" class="form-control" placeholder="Digite o RG (opcional)" />
+                <span asp-validation-for="RG" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="DataNascimento" class="control-label"></label>
+                <input asp-for="DataNascimento" class="form-control" type="date" />
+                <span asp-validation-for="DataNascimento" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="TipoVinculo" class="control-label"></label>
+                <input asp-for="TipoVinculo" class="form-control" placeholder="Ex: Filho, Mãe, etc." />
+                <span asp-validation-for="TipoVinculo" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="SocioTitularId" class="control-label"></label>
+                <select asp-for="SocioTitularId" class="form-control" asp-items="ViewBag.SocioTitularId">
+                    <option value="">Selecione o sócio titular</option>
+                </select>
+                <span asp-validation-for="SocioTitularId" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <input type="submit" value="Salvar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Cancelar</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

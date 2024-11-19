@@ -1,0 +1,243 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = RegistroEventoAssociadov4
+build_property.RootNamespace = RegistroEventoAssociadov4
+build_property.ProjectDir = C:\Users\roger\Documents\Faculdade\webDev\RegistroEventoAssociadov4\RegistroEventoAssociadov4\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\roger\Documents\Faculdade\webDev\RegistroEventoAssociadov4\RegistroEventoAssociadov4
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Associadoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzb2NpYWRvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Associadoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzb2NpYWRvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Associadoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzb2NpYWRvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Associadoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzb2NpYWRvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Associadoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXNzb2NpYWRvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Cidades/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Cidades/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Cidades/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Cidades/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Cidades/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2lkYWRlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Convidadoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udmlkYWRvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Convidadoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udmlkYWRvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Convidadoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udmlkYWRvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Convidadoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udmlkYWRvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Convidadoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udmlkYWRvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Dependentes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Dependentes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Dependentes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Dependentes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Dependentes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGVwZW5kZW50ZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/EspacoLocavels/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwYWNvTG9jYXZlbHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/EspacoLocavels/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwYWNvTG9jYXZlbHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/EspacoLocavels/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwYWNvTG9jYXZlbHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/EspacoLocavels/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwYWNvTG9jYXZlbHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/EspacoLocavels/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXNwYWNvTG9jYXZlbHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Estadoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Estadoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Estadoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Estadoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Estadoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXN0YWRvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Eventoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvZXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Eventoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvZXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Eventoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvZXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Eventoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvZXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Eventoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXZlbnRvZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Fornecedors/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Fornecedors/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcnNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Fornecedors/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcnNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Fornecedors/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Fornecedors/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRm9ybmVjZWRvcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Produtoes/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Produtoes/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b2VzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Produtoes/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b2VzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Produtoes/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Produtoes/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/roger/Documents/Faculdade/webDev/RegistroEventoAssociadov4/RegistroEventoAssociadov4/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-c3jn052ktf
