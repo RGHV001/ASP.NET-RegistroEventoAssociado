@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using RegistroEventoAssociadov4.Data;
 using RegistroEventoAssociadov4.Models;
+using System.Threading.Tasks;
 
 namespace RegistroEventoAssociadov4.Controllers
 {
@@ -22,8 +19,11 @@ namespace RegistroEventoAssociadov4.Controllers
         // GET: Eventoes
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Eventos.Include(e => e.EspacoLocavel).Include(e => e.Responsavel);
-            return View(await applicationDbContext.ToListAsync());
+            var eventos = _context.Eventos
+                .Include(e => e.EspacoLocavel)
+                .Include(e => e.Responsavel);
+
+            return View(await eventos.ToListAsync());
         }
 
         // GET: Eventoes/Details/5
@@ -37,7 +37,8 @@ namespace RegistroEventoAssociadov4.Controllers
             var evento = await _context.Eventos
                 .Include(e => e.EspacoLocavel)
                 .Include(e => e.Responsavel)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(e => e.Id == id);
+
             if (evento == null)
             {
                 return NotFound();
@@ -49,26 +50,32 @@ namespace RegistroEventoAssociadov4.Controllers
         // GET: Eventoes/Create
         public IActionResult Create()
         {
-            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "Id");
-            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "Id");
+            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "NomeEspaco");
+            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "NomeTitular");
             return View();
         }
 
         // POST: Eventoes/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,Nome,Descricao,EspacoLocavelId,DataInicio,HoraInicio,DataFim,HoraFim,ResponsavelId,ValorLocacao")] Evento evento)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(evento);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
+                try
+                {
+                    _context.Add(evento);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Erro ao salvar o evento: {ex.Message}");
+                }
             }
-            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "Id", evento.EspacoLocavelId);
-            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "Id", evento.ResponsavelId);
+
+            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "NomeEspaco", evento.EspacoLocavelId);
+            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "NomeTitular", evento.ResponsavelId);
             return View(evento);
         }
 
@@ -85,14 +92,13 @@ namespace RegistroEventoAssociadov4.Controllers
             {
                 return NotFound();
             }
-            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "Id", evento.EspacoLocavelId);
-            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "Id", evento.ResponsavelId);
+
+            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "NomeEspaco", evento.EspacoLocavelId);
+            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "NomeTitular", evento.ResponsavelId);
             return View(evento);
         }
 
         // POST: Eventoes/Edit/5
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,Descricao,EspacoLocavelId,DataInicio,HoraInicio,DataFim,HoraFim,ResponsavelId,ValorLocacao")] Evento evento)
@@ -108,6 +114,7 @@ namespace RegistroEventoAssociadov4.Controllers
                 {
                     _context.Update(evento);
                     await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
@@ -120,10 +127,14 @@ namespace RegistroEventoAssociadov4.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
+                catch (Exception ex)
+                {
+                    ModelState.AddModelError("", $"Erro ao atualizar o evento: {ex.Message}");
+                }
             }
-            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "Id", evento.EspacoLocavelId);
-            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "Id", evento.ResponsavelId);
+
+            ViewData["EspacoLocavelId"] = new SelectList(_context.EspacosLocaveis, "Id", "NomeEspaco", evento.EspacoLocavelId);
+            ViewData["ResponsavelId"] = new SelectList(_context.Associados, "Id", "NomeTitular", evento.ResponsavelId);
             return View(evento);
         }
 
@@ -138,7 +149,8 @@ namespace RegistroEventoAssociadov4.Controllers
             var evento = await _context.Eventos
                 .Include(e => e.EspacoLocavel)
                 .Include(e => e.Responsavel)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .FirstOrDefaultAsync(e => e.Id == id);
+
             if (evento == null)
             {
                 return NotFound();
@@ -153,12 +165,13 @@ namespace RegistroEventoAssociadov4.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var evento = await _context.Eventos.FindAsync(id);
+
             if (evento != null)
             {
                 _context.Eventos.Remove(evento);
+                await _context.SaveChangesAsync();
             }
 
-            await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 

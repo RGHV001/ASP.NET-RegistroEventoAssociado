@@ -24,7 +24,7 @@ html {
 }
 
 body {
-    margin-bottom: 60px;
+    margin-bottom: 10px;
     background-color: #f9f9f9;
     padding-top: 20px;
 }
@@ -75,7 +75,7 @@ body {
 .footer {
     background-color: #333;
     color: #f0f0f0;
-    padding: 20px 0;
+    padding: 2px 0;
     font-size: 0.9em;
 }
 

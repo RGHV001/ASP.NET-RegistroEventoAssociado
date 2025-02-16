@@ -69,5 +69,96 @@ namespace RegistroEventoAssociadov4.Controllers
             ViewData["EstadoId"] = new SelectList(_context.Estados, "Id", "Nome", cidade.EstadoId);
             return View(cidade);
         }
+
+        // GET: Cidades/Edit/5
+        public async Task<IActionResult> Edit(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cidade = await _context.Cidades.FindAsync(id);
+            if (cidade == null)
+            {
+                return NotFound();
+            }
+
+            ViewData["EstadoId"] = new SelectList(_context.Estados, "Id", "Nome", cidade.EstadoId);
+            return View(cidade);
+        }
+
+        // POST: Cidades/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Nome,DDD,EstadoId")] Cidade cidade)
+        {
+            if (id != cidade.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(cidade);
+                    await _context.SaveChangesAsync();
+                    return RedirectToAction(nameof(Index));
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!CidadeExists(cidade.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+            }
+
+            ViewData["EstadoId"] = new SelectList(_context.Estados, "Id", "Nome", cidade.EstadoId);
+            return View(cidade);
+        }
+
+        // GET: Cidades/Delete/5
+        public async Task<IActionResult> Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+
+            var cidade = await _context.Cidades
+                .Include(c => c.Estado)
+                .FirstOrDefaultAsync(m => m.Id == id);
+            if (cidade == null)
+            {
+                return NotFound();
+            }
+
+            return View(cidade);
+        }
+
+        // POST: Cidades/Delete/5
+        [HttpPost, ActionName("Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            var cidade = await _context.Cidades.FindAsync(id);
+            if (cidade != null)
+            {
+                _context.Cidades.Remove(cidade);
+                await _context.SaveChangesAsync();
+            }
+            return RedirectToAction(nameof(Index));
+        }
+
+        private bool CidadeExists(int id)
+        {
+            return _context.Cidades.Any(e => e.Id == id);
+        }
     }
 }

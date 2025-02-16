@@ -1,59 +1,52 @@
 ﻿@model IEnumerable<RegistroEventoAssociadov4.Models.EspacoLocavel>
 
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Lista de Espaços Locáveis";
 }
 
-<h1>Index</h1>
+<h2>Lista de Espaços Locáveis</h2>
 
+<!-- Botão para criar um novo espaço locável -->
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
 </p>
-<table class="table">
+
+<table class="table table-striped">
     <thead>
         <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.NomeEspaco)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Tamanho)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CapacidadePessoas)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.DataConstrucao)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Localvel)
-            </th>
-            <th></th>
+            <th>@Html.DisplayNameFor(model => model.NomeEspaco)</th>
+            <th>@Html.DisplayNameFor(model => model.Tamanho)</th>
+            <th>@Html.DisplayNameFor(model => model.CapacidadePessoas)</th>
+            <th>@Html.DisplayNameFor(model => model.DataConstrucao)</th>
+            <th>@Html.DisplayNameFor(model => model.Localvel)</th>
+            <th>Ações</th>
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.NomeEspaco)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Tamanho)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CapacidadePessoas)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.DataConstrucao)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Localvel)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@Html.DisplayFor(modelItem => item.NomeEspaco)</td>
+                <td>@Html.DisplayFor(modelItem => item.Tamanho)</td>
+                <td>@Html.DisplayFor(modelItem => item.CapacidadePessoas)</td>
+                <td>@Html.DisplayFor(modelItem => item.DataConstrucao)</td>
+                <td>
+                    @if (item.Localvel)
+                    {
+                        <span class="badge bg-success">Sim</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Não</span>
+                    }
+                </td>
+                <td>
+                    <!-- Botões de ação -->
+                    <a asp-action="Edit" asp-route-id="@item.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Details" asp-route-id="@item.Id" class="btn btn-primary btn-sm">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id" class="btn btn-danger btn-sm">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

@@ -1,6 +1,12 @@
 ﻿@model IEnumerable<RegistroEventoAssociadov4.Models.Associado>
 
 <h2>Lista de Associados</h2>
+
+<!-- Botão para criar um novo associado -->
+<p>
+    <a asp-action="Create" class="btn btn-success">Create New</a>
+</p>
+
 <table class="table table-striped">
     <thead>
         <tr>
@@ -20,7 +26,10 @@
                 <td>@associado.CPF</td>
                 <td>@associado.TipoDeAssociacao</td>
                 <td>
+                    <!-- Botões de ação -->
                     <a asp-action="Details" asp-route-id="@associado.Id" class="btn btn-primary btn-sm">Detalhes</a>
+                    <a asp-action="Edit" asp-route-id="@associado.Id" class="btn btn-warning btn-sm">Edit</a>
+                    <a asp-action="Delete" asp-route-id="@associado.Id" class="btn btn-danger btn-sm">Delete</a>
                 </td>
             </tr>
         }
